@@ -36,8 +36,6 @@ Usage
 
     Run the script and it will ask you for the username and password to the UNVR device, the IP for the device, and the IP for the RTSPtoWeb Server:
 
-bash
-
 python getUNVRstreams.py
 
 Description
