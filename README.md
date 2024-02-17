@@ -16,7 +16,7 @@ Ensure you have Python installed. This script requires Python 3.
 
 Clone the repository:
 
-git clone 
+gh repo clone nickr914/UNVRstream
 
 Install the required packages:
 
