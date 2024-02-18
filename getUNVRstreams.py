@@ -105,7 +105,6 @@ def main():
                 channels = camera['channels']
                 for channel in channels:
                     if channel['id'] == 2:
-                        if cha
                         rtsp_alias = channel['rtspAlias']
                 stream_url = f"rtsps://{UNVR_IP}:7441/{rtsp_alias}"
                 complete_json["streams"][camera_namens] = {
