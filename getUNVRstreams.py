@@ -85,7 +85,6 @@ def main():
                     "ice_servers": [
                         "stun:stun.l.google.com:19302"
                     ],
-                    "ice_username": "",
                     "log_level": "debug",
                     "rtsp_port": ":5541",
                     "token": {
@@ -106,17 +105,18 @@ def main():
                 for channel in channels:
                     if channel['id'] == 2:
                         rtsp_alias = channel['rtspAlias']
-                stream_url = f"rtsps://{UNVR_IP}:7441/{rtsp_alias}"
-                complete_json["streams"][camera_namens] = {
-                    "channels": {
-                        "0": {
-                            "on_demand": True,
-                            "insecure_skip_verify": True,
-                            "url": stream_url
-                        }
-                    },
-                    "name": camera_name
-                }
+                        if rtsp_alias is not None:
+                            stream_url = f"rtsps://{UNVR_IP}:7441/{rtsp_alias}"
+                            complete_json["streams"][camera_namens] = {
+                                "channels": {
+                                    "0": {
+                                        "on_demand": True,
+                                        "insecure_skip_verify": True,
+                                        "url": stream_url
+                                    }
+                                },
+                                "name": camera_name
+                            }
             
             # Write complete JSON data to a file
             with open('config.json', 'w') as json_file:
