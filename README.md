@@ -20,7 +20,7 @@ gh repo clone nickr914/UNVRstream
 
 Install the required packages:
 
-pip install requests
+pip install -r requirements.txt
 
 Usage
 
