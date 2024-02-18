@@ -1,5 +1,5 @@
 # UNVRstream
-It's frustrating that Ubiquit seems unresponsive, and the Viewer tool doesn't quite live up to its name. Additionally, managing multiple users accessing the Ubiquit UNVR for camera viewing causes the CPU usage to soar. After investing nine tedious hours in troubleshooting software and exploring the UNVR device, I concluded that a solution lies in streamlining the process. By consolidating stream capture and distribution through a single device, we can potentially resolve this issue.
+It's frustrating that Ubiquit seems unresponsive, and the Viewer tool for Ubiquiti Protect doesn't quite live up to its name. Additionally, managing multiple users accessing the Ubiquit UNVR for Protect/camera viewing causes the CPU usage to soar. After investing nine tedious hours in troubleshooting software and exploring the UNVR Protect device, I concluded that a solution lies in streamlining the process. By consolidating stream capture and distribution through a single device, we can potentially resolve this issue.
 
 This uses RTSPtoWeb from deepch.
 
@@ -7,7 +7,7 @@ This uses RTSPtoWeb from deepch.
 
 # UNVR Camera Configuration to HTML Page Conversion
 
-This script reads UNVR camera configuration and generates an HTML page with a grid layout of RTSP streams from the cameras using RTSPtoWeb Server from https://github.com/deepch/RTSPtoWeb.
+This script reads UNVR Protect/camera configuration and generates a config.json and an HTML page with a grid layout of RTSP streams from the cameras using RTSPtoWeb Server from https://github.com/deepch/RTSPtoWeb.
 
 ## Installation
 
